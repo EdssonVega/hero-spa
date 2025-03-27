@@ -1,16 +1,14 @@
 import React from 'react';
 import { Routes, Route} from 'react-router';
-import { DcPage } from '../pages/DcPage';
-import { MarvelPage } from '../pages/MarvelPage';
+import { Login } from '../pages/Login';
+import { HeroesRoutes } from './HeroesRoutes';
 
 const AppRouter = () => {
   return (
-    <>
         <Routes >
-            <Route path='marvel' element={<MarvelPage />}/>
-            <Route path='dc' element={<DcPage />}/>
+            <Route path='login' element={<Login/>}/>
+            <Route path='/*' element={<HeroesRoutes/>}/>
         </Routes>        
-    </>
   )
 }
 
