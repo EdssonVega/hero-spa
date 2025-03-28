@@ -22,3 +22,21 @@
     margin: 0 5px;
     text-decoration: none;
 }
+
+.navbarContainer button{
+    background-color: transparent;
+    color: rgb(190, 190, 190);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarContainer button:hover{
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s;
+}

@@ -1,0 +1,42 @@
+.searcherMainContainer{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.searcherMainContainer h2{
+    margin:15px 0;
+}
+
+.searcherMainContainer input{
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.searcherMainContainer input:focus{
+    border: 1px solid blue;
+}
+
+.searcherMainContainer button{
+    background-color: white;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.searcherMainContainer button:hover{
+    transition: all 0.5s;
+    background-color: blue;
+    color: white;
+}
