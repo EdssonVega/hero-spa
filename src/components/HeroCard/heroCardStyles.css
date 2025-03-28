@@ -1,0 +1,27 @@
+.cardContainer{
+    display: flex;
+    gap: 15px;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    width: 450px;   
+    flex-grow: 0 
+}
+
+.cardContainer img{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+}
+
+.cardContainerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cardContainerInfo p{
+    color: rgb(146, 146, 146);
+}
+
+.cardContainerInfo a{
+    text-decoration: none;
+}

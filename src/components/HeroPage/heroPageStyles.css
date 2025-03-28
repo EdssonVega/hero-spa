@@ -1,0 +1,44 @@
+.heroContainer{
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    animation: presentation 0.5s ease-out 0s 1;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+.heroContainer img{
+    width: 300px;
+    height: 500px;
+}
+
+.infoContainer{
+    width: 100%;
+}
+.heroData{
+  margin: 15px;
+}
+
+.heroContainer button{
+    color: blue;
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heroContainer button:hover{
+    transition: all 0.5s;
+    background-color: blue;
+    color: white;
+}
+
+@keyframes presentation {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
