@@ -6,7 +6,7 @@ import "./heroesResultStyles.css"
 
 export const HeroesResult = ({ heroes }) => {
     const location = useLocation()
-    const query = queryString.parse(location.search).q
+    const query = queryString.parse(location.search).q || ""
     console.log(query)
 
   return (
@@ -26,7 +26,7 @@ export const HeroesResult = ({ heroes }) => {
                   characters={hero.characters}
                 />
         ))) : (
-            (heroes.some(hero => hero.superhero.includes(query))) === true ? (
+            !query ? (
                 <div className="searchAHero">Search a hero</div>
 
             ): (
