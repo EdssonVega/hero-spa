@@ -1,0 +1,11 @@
+.resultsContainer{
+    width: 50%;
+}
+
+.resultsContainer h2{
+    margin: 15px 0;
+}
+
+.resultsContainer hr{
+    margin-bottom: 10px;
+}
