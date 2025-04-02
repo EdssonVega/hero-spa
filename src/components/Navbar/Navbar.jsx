@@ -1,10 +1,13 @@
 import { replace } from 'dom/lib/mutation'
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, useNavigate } from 'react-router'
+import { AuthContext } from '../../auth/context/AuthContext'
 import "./NavbarStyles.css"
 
 export const Navbar = () => {
-
+    const {user} = useContext(AuthContext)
+    console.log(user)
+    
     const navigate = useNavigate()
 
     const onLogOut = () => {
@@ -25,9 +28,13 @@ export const Navbar = () => {
                  Search
             </NavLink>
         </div>
-        <button onClick={onLogOut}>
-            Log out
-        </button>
+        <div className='logoutUserContainer'>
+            <h1>{user?.name}</h1>
+            <button onClick={onLogOut}>
+                Log out
+            </button>
+
+        </div>
     </div>
  )
 }

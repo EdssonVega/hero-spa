@@ -40,3 +40,15 @@
     border: 1px solid white;
     transition: all 0.5s;
 }
+
+.logoutUserContainer{
+    display: flex;
+    color: rgb(190, 190, 190);
+    align-items: center;
+    gap: 15px;
+}
+
+.logoutUserContainer h1{
+    font-weight: 400;
+    font-size: 15px;
+}
