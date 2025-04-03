@@ -5,12 +5,13 @@ import { AuthContext } from '../../auth/context/AuthContext'
 import "./NavbarStyles.css"
 
 export const Navbar = () => {
-    const {user} = useContext(AuthContext)
+    const {user,logout} = useContext(AuthContext)
     console.log(user)
     
     const navigate = useNavigate()
 
     const onLogOut = () => {
+        logout()
         navigate("/login",{
             replace:true
         })
