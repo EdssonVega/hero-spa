@@ -4,3 +4,41 @@
     width: 100%;
     gap: 25px;
 }
+
+.loginPageContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/public/heroes/marvelDCwall.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 50px;
+    color: white;
+    padding: 100px;
+}
+
+.loginPageContainer h1{
+    color: white;
+    font-size: 108px;
+}
+
+.loginPageContainer p{
+    font-size: 24px;
+}
+
+.loginPageContainer div{
+    width: 50%;
+    border: 1px solid red;
+}
+
+.loginForm{
+    background-color: white;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
